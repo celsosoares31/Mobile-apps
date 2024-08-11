@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "129435912653",
+    "project_id": "sos-incendios",
+    "storage_bucket": "sos-incendios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129435912653:android:d86aa8704aeb369674dc84",
+        "android_client_info": {
+          "package_name": "com.example.sosincendios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129435912653-nuum85r87j6afpka2r7pl57kpu7t3p9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sosincendios",
+            "certificate_hash": "6705545bef0bbd8faf290c4e9f557b89d86292d0"
+          }
+        },
+        {
+          "client_id": "129435912653-dodcq6rlvvoo17ouilip0pjaeui6tihb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8uM3MjkKUaGp5zlABMvuRrGdAF7bWSpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129435912653-dodcq6rlvvoo17ouilip0pjaeui6tihb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

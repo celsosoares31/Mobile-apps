@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SOS Incendios</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="menu_open">open</string>
+    <string name="menu_close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">New Fragment</string>
+    <string name="open_new_fire_item_register_intent">Open new fire item register intent</string>
+    <string name="content_description_calendar">calendar icon</string>
+    <string name="content_description_location">Location icon\n</string>
+    <string name="content_description_media">fire image</string>
+    <string name="yesBtn">sim</string>
+    <string name="negativeOption">Não</string>
+    <string name="positiveOption">Sim</string>
+    <string name="msg_token_fmt" />
+</resources>

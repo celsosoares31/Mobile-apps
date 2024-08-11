@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:indicatorColor="@color/gradientEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Nova Ocorrênçia de incêndio"
+                android:textAllCaps="true"
+                android:textColor="@color/gradientStart"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I - Localização do Incêndio"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray">
+
+                </View>
+                <!-- TODO: Update blank fragment layout -->
+                <ImageView
+                    android:id="@+id/firePlaceImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_image" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/firePlaceImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray"
+                    android:text="Tirar Foto"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:hint="Provinvia/Cidade"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Bairro/Localidade"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireLocality"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Áreas publicas e particulares"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:checkedButton="@+id/radio_button_1">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/gradientEnd"
+                        android:text="Area publica"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Area florestal"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Propriedade rural"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Area urbana"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="II - Dados do combate"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray">
+
+                </View>
+                <!-- TODO: Update blank fragment layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Especificacao do local" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Detençao"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:checkedButton="@+id/radio_buttonII_1">
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonII_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:text="Transeunte"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonII_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Durante a ronda"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonII_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Proprietario"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonII_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Policia"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonII_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Morador"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Etapas de combate"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:hint="Data de inicio"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:hint="Data de Fim"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Forma de extinção"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:checkedButton="@+id/radio_buttonIII_1">
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIII_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:text="Combate directo"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIII_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Combate indirecto"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIII_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Extinsao natural"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="III - Provaveis causas"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray">
+
+                </View>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:checkedButton="@id/radio_buttonIV_3">
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Caça"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIV_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fogos de artificio"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIV_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cabos electricos"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIV_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Extracao de madeira"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIV_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Limpeza da area para mineiraçao"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+
+                    <RadioButton
+                        android:id="@+id/radio_buttonIV_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Queimada descontrolada"
+                        android:textColor="@color/black"
+                        app:buttonTint="@color/gradientEnd" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IV - Danos"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray">
+
+                </View>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:hint="Estimativa da area queimada"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireAffectedArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:hint="Animais mortos"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireAnimalsDied"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Imagens dos danos"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fireImage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_image" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fireImage1Btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:backgroundTint="@color/gray"
+                            android:text="Tirar Foto"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fireImage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_image" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fireImage2Btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:backgroundTint="@color/gray"
+                            android:text="Tirar Foto"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fireImage3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_image" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fireImage3Btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:backgroundTint="@color/gray"
+                            android:text="Tirar Foto"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fireImage4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_image" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fireImage4Btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:backgroundTint="@color/gray"
+                            android:text="Tirar Foto"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:hint="Observações"
+                    app:boxStrokeColor="@color/gray"
+                    app:hintTextColor="@color/gradientStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fireDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="3"
+                        android:minLines="3" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fireSubmitBtn"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/gradientEnd"
+                android:paddingVertical="15dp"
+                android:text="Submeter"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

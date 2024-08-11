@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#EBB3B2B2</color>
+    <color name="lightGray">#F1ECEC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#cf4526</color>
+    <color name="gradientStart">#FF3131</color>
+    <color name="darkGreen">#DFF4381F</color>
+    <color name="cardBackground">#54F4381F</color>
+    <color name="lightGreen">#88C5BD</color>
+    <color name="gradientEnd">#FF914D</color>
+</resources>

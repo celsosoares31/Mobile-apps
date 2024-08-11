@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuItemHome"
+            android:title="Home"
+            android:icon="@drawable/ic_home" />
+
+        <item android:title="Informação"
+            app:showAsAction="collapseActionView"
+            >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/menuItemStatistics"
+                        android:icon="@drawable/ic_chart"
+                        android:title="Estatisticas" />
+                    <item
+                        android:id="@+id/menuItemNews"
+                        android:title="Utilidade publica"
+                        android:icon="@drawable/ic_newspaper"/>
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Autenticação">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:title="Sair"
+                        android:icon="@drawable/ic_logout"
+                        android:id="@+id/menuItemLogout"/>
+                </group>
+            </menu>
+        </item>
+        <item android:title="">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/menuItemAbout"
+                        android:title="Sobre"
+                        android:icon="@drawable/ic_info"/>
+                </group>
+            </menu>
+        </item>
+
+    </group>
+</menu>

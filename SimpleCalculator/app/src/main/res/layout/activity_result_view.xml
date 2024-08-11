@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_header"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:textColor="@color/darkBlue"
+        android:layout_marginVertical="40dp"/>
+    <TextView
+        android:id="@+id/txtOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dangerBtn"
+        android:text="Operacao"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginVertical="30dp"
+        />
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Resultado"
+    android:textStyle="bold"
+    android:textSize="25sp"
+    android:layout_marginVertical="20dp"
+    />
+    <TextView
+        android:id="@+id/resultOutput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="center"
+        android:text="0.0"
+        android:textColor="@color/lightBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</TableRow>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="100dp"
+        android:text="@string/back_btn"
+        android:backgroundTint="@color/dangerBtn"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:id="@+id/backBtn"/>
+</LinearLayout>

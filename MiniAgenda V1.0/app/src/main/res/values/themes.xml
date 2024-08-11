@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MiniAgenda" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+         <item name="colorSurface">@color/blue</item>
+    </style>
+
+    <style name="Theme.MiniAgenda" parent="Base.Theme.MiniAgenda" />
+</resources>

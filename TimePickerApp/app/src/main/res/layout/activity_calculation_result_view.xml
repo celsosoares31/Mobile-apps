@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculationResultView"
+    android:padding="25dp"
+    android:background="@color/lightGray"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:onClick="backToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="28sp"
+        android:textColor="@color/startColor"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginVertical="50dp"
+        android:textAllCaps="true"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Duração das actividades"
+    style="@style/textStyle"
+    android:textSize="20sp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/separator_line"
+        android:backgroundTint="@color/startColor"
+        />
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_1_text"
+
+        />
+
+    <LinearLayout
+        style="@style/buttonContainerStyle"
+        >
+
+        <TextView
+            android:id="@+id/timeAct1"
+            android:text="@string/start_txt"
+            style="@style/textViewStyle"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_2_text" />
+
+    <LinearLayout style="@style/buttonContainerStyle">
+
+        <TextView
+            android:id="@+id/timeAct2"
+            style="@style/textViewStyle"
+            android:text="@string/start_txt" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_3_text" />
+
+    <LinearLayout
+        style="@style/buttonContainerStyle"
+        >
+
+        <TextView
+            android:id="@+id/timeAct3"
+            android:text="@string/start_txt"
+            style="@style/textViewStyle"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total de tempo gasto"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        style="@style/buttonContainerStyle"
+        >
+
+        <TextView
+            android:id="@+id/totalDuration"
+            android:text="@string/start_txt"
+            style="@style/textViewStyle"
+            android:textColor="@color/startColor"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

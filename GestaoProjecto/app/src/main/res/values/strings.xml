@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GestaoProjecto</string>
+    <string-array name="project_status_array">
+        <item>Not Started</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="total_projects">Total Projects:</string>
+    <string name="completed_projects">Completed Projects:</string>
+    <string name="in_progress_projects">In Progress Projects:</string>
+    <string name="not_started_projects">Not Started Projects:</string>
+    <string name="project_name_hint">Project Name</string>
+    <string name="project_type_hint">Project Type</string>
+    <string name="description_hint">Description</string>
+    <string name="start_date_hint">Start Date</string>
+    <string name="end_date_hint">End Date</string>
+    <string name="add_project_button">Add Project</string>
+    <string name="menuitemhomelabel">Home</string>
+    <string name="menuitemaddlabel">Add</string>
+    <string name="menuitemstatisticslabel">Statistics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menuitemlogoutlabel">Logout</string>
+    <string name="project_add_success">Project added successfuly</string>
+    <string name="input_validation_error">All fields are required</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Report">Report of all projects</string>
+
+
+</resources>

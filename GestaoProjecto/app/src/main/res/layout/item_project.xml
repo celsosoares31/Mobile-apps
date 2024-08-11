@@ -1,0 +1,31 @@
+<!-- res/layout/item_project.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Test1"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:text="text2"
+            android:id="@+id/tvProjectStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

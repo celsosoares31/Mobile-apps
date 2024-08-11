@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "99017937631",
+    "project_id": "messaging-app-5a2ea",
+    "storage_bucket": "messaging-app-5a2ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99017937631:android:471f5140100f8c04ec0f6a",
+        "android_client_info": {
+          "package_name": "com.example.notificationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp9y9SjC_gapDh6GEMgYuE0hmds6xBTcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99017937631:android:a2e7f261c370de32ec0f6a",
+        "android_client_info": {
+          "package_name": "com.example.notificationapp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp9y9SjC_gapDh6GEMgYuE0hmds6xBTcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

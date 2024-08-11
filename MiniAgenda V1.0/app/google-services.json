@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "87528085629",
+    "firebase_url": "https://mini-agenda-f1325-default-rtdb.firebaseio.com",
+    "project_id": "mini-agenda-f1325",
+    "storage_bucket": "mini-agenda-f1325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87528085629:android:dd0b6286359a2c3434f914",
+        "android_client_info": {
+          "package_name": "com.example.miniagenda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXNe9ZPTegrk_iE86_1G5xfBA3gmcToGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

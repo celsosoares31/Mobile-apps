@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@drawable/app_background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/register_act_title"
+        android:textColor="@color/babyBlue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_area_background"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:paddingTop="40dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.125">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:labelFor="@id/inputName"
+                android:text="@string/full_name"
+                android:textColor="@color/royalBlue"
+                android:textSize="15sp" />
+
+            <EditText
+                android:pointerIcon="handwriting"
+                android:id="@+id/inputName"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:hint="@string/insert_your_name"
+                android:textColor="@color/midnight"
+                android:cursorVisible="true"
+                android:textSize="20sp"
+                android:autofillHints="name"
+                android:inputType="textPersonName" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:labelFor="@id/inputEmail"
+                android:text="@string/email"
+                android:textColor="@color/royalBlue"
+                android:textSize="15sp" />
+
+            <EditText
+                android:pointerIcon="handwriting"
+                android:id="@+id/inputEmail"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:hint="@string/insert_your_email"
+                android:textColor="@color/midnight"
+                android:cursorVisible="true"
+                android:textSize="20sp"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:labelFor="@id/inputDate"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/royalBlue"
+                android:textSize="15sp" />
+
+            <EditText
+                android:hint="@string/date_of_birth_format"
+                android:pointerIcon="handwriting"
+                android:id="@+id/inputDate"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/midnight"
+                android:cursorVisible="true"
+                android:textSize="20sp"
+                android:inputType="date"
+                 />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/gender"
+                android:textColor="@color/royalBlue"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:background="@drawable/input_background"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+
+                >
+                <RadioButton
+                    android:id="@+id/radioBtnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/male"
+                    android:textColor="@color/midnight"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/radioBtnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="@string/female"
+                    android:textColor="@color/midnight"
+                    android:textSize="20sp"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:labelFor="@id/inputEmail"
+                android:text="@string/marital_status_label"
+                android:textColor="@color/royalBlue"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:entries="@array/marital_status"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/midnight"
+                android:textSize="20sp" />
+        </TableRow>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/i_confirm_that_all_provided_information_is_correct"
+            android:textColor="@color/royalBlue"
+            android:layout_marginTop="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/save"
+                android:textSize="25sp"
+                android:textColor="@color/babyBlue" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:textSize="25sp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/RoseRed"
+                android:text="@string/clean"
+                android:textColor="@color/babyBlue"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

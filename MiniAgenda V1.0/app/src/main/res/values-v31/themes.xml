@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.MiniAgenda" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorSurface">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <item name="android:windowSplashScreenAnimationDuration">500</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>
+    </style>
+</resources>

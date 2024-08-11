@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Pergunta 1 --> <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1. Qual é a capital da França?"
+        android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/option1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paris" />
+
+            <RadioButton
+                android:id="@+id/option1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Londres" />
+
+            <RadioButton
+                android:id="@+id/option1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roma" />
+
+            <RadioButton
+                android:id="@+id/option1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berlim" />
+        </RadioGroup> <!-- Pergunta 2 --> <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="2. Qual é o maior planeta do Sistema Solar?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/option2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Júpiter" />
+
+            <RadioButton
+                android:id="@+id/option2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturno" />
+
+            <RadioButton
+                android:id="@+id/option2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terra" />
+
+            <RadioButton
+                android:id="@+id/option2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Netuno" />
+        </RadioGroup> <!-- Pergunta 3 --> <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3. Quem escreveu 'Dom Quixote'?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/option3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="William Shakespeare" />
+
+            <RadioButton
+                android:id="@+id/option3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miguel de Cervantes" />
+
+            <RadioButton
+                android:id="@+id/option3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charles Dickens" />
+
+            <RadioButton
+                android:id="@+id/option3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jane Austen" />
+        </RadioGroup> <!-- Pergunta 4 --> <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="4. Qual é o elemento químico mais abundante no Universo?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/option4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oxigênio" />
+
+            <RadioButton
+                android:id="@+id/option4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hidrogênio" />
+
+            <RadioButton
+                android:id="@+id/option4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbono" />
+
+            <RadioButton
+                android:id="@+id/option4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hélio" />
+        </RadioGroup> <!-- Botão de Submissão -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Submeter" />
+    </LinearLayout>
+</ScrollView>

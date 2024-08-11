@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_word">Adicionar</string>
+    <string name="hint_word">Palavra....</string>
+    <string name="button_save">Gravar</string>
+    <string name="empty_not_saved">Palavra nao salva, campo vazio</string>
+</resources>

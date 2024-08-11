@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="25dp"
+    android:background="@color/lightGray"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/app_title"
+    android:textSize="28sp"
+    android:textColor="@color/startColor"
+    android:gravity="center_horizontal"
+    android:textStyle="bold"
+    android:layout_marginVertical="50dp"
+    android:textAllCaps="true"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            style="@style/capTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+
+            />
+        <TextView
+            style="@style/capTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fim"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/separator_line"
+        android:backgroundTint="@color/startColor"
+        />
+    <LinearLayout
+        style="@style/buttonContainerStyle"
+        >
+
+        <TextView
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_1_text"
+
+            />
+
+        <android.widget.Button
+            android:id="@+id/act1StartBtn"
+            android:onClick="setStartTimeBtn"
+            android:text="@string/start_txt"
+            style="@style/buttonStyle"
+            />
+
+        <android.widget.Button
+            android:id="@+id/act1EndBtn"
+            android:onClick="setStartTimeBtn"
+            style="@style/buttonStyle"
+            android:text="@string/start_txt" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonContainerStyle"
+        >
+
+        <TextView
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_2_text" />
+
+        <android.widget.Button
+            android:id="@+id/act2StartBtn"
+            android:onClick="setStartTimeBtn"
+            style="@style/buttonStyle"
+            android:text="@string/start_txt" />
+        <android.widget.Button
+            android:id="@+id/act2EndBtn"
+            android:onClick="setStartTimeBtn"
+            android:text="@string/start_txt"
+            style="@style/buttonStyle"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonContainerStyle"
+        >
+
+        <TextView
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_3_text" />
+
+        <android.widget.Button
+            android:id="@+id/act3StartBtn"
+            android:onClick="setStartTimeBtn"
+            android:text="@string/start_txt"
+            style="@style/buttonStyle"
+            />
+        <android.widget.Button
+            android:id="@+id/act3EndBtn"
+            android:onClick="setStartTimeBtn"
+            android:text="@string/start_txt"
+            style="@style/buttonStyle"
+             />
+    </LinearLayout>
+
+    <android.widget.Button
+        android:onClick="calculateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_text"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:shadowColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/calculate_btn_background"
+        />
+
+</LinearLayout>

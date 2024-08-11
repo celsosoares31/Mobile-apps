@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Control de Gastos</string>
+    <string name="item_text">Item</string>
+    <string name="date_text">Data</string>
+    <string name="amount_text">Custo</string>
+    <string name="photo_content_description">Foto</string>
+    <string name="main_activity_title">Main Activity</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Senha</string>
+    <string name="label_login">Login</string>
+    <string name="hint_item">Item</string>
+    <string name="hint_location">Localizacao</string>
+    <string name="hint_amount">Custo</string>
+    <string name="select_date">Selecione a data</string>
+    <string name="select_time">Selecione a hora</string>
+    <string name="add_photo">Selecionar foto</string>
+    <string name="save">Salvar</string>
+    <string name="menuitemlogoutlabel">Sair</string>
+    <string name="menuitemaddlabel">Novo Gasto</string>
+    <string name="menuitemRelatorioslabel">Relatorios</string>
+    <string name="menuitemhomelabel">Meus Gastos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

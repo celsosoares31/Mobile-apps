@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestaoProjecto</string>
+    <string name="username_hint">Nome de usuario</string>
+    <string name="password_hint">Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="total_projects">Todos Projectos:</string>
+    <string name="completed_projects">Projectos completos:</string>
+    <string name="in_progress_projects">Projectos em progresso:</string>
+    <string name="not_started_projects">Projectos nao iniciados:</string>
+    <string name="project_name_hint">Nome do Projecto</string>
+    <string name="project_type_hint">Tipo de Projecto</string>
+    <string name="description_hint">Descricao</string>
+    <string name="start_date_hint">Data de Inicio</string>
+    <string name="end_date_hint">Data de Fim</string>
+    <string name="add_project_button">Adicionar Novo Projecto</string>
+    <string name="menuitemhomelabel">Tela principal</string>
+    <string name="menuitemaddlabel">Adicionar</string>
+    <string name="menuitemstatisticslabel">Estatisticas</string>
+    <string name="menuitemlogoutlabel">Sair</string>
+    <string name="project_add_success">Projecto adicionado com sucesso</string>
+    <string name="input_validation_error">Todos os campos são obrigatorios</string>
+    <string name="Report">Relatorio dos projectos</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="input1_hint_text">Insira o primeiro numero</string>
+    <string name="adicao">+</string>
+    <string name="subtracao">-</string>
+    <string name="multiplicar">x</string>
+    <string name="dividir">/</string>
+    <string name="app_header">Calculadora</string>
+    <string name="input2_hint_text">Insira o segundo numero</string>
+    <string name="back_btn">Voltar</string>
+    <string name="potencia">x^y</string>
+    <string name="factorial">n!</string>
+    <string name="log">Log</string>
+</resources>

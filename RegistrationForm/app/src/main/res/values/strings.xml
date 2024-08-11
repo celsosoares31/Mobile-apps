@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RegistrationForm</string>
+    <string name="register_act_title">REGISTER</string>
+    <string name="clean">clear</string>
+    <string name="save">Save</string>
+    <string name="email">Email</string>
+    <string name="insert_your_email">Insert your email</string>
+    <string name="insert_your_name">Insert your name</string>
+    <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="marital_status_label">Marital Status</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="date_of_birth_format">dd/mmmm/yyyy</string>
+    <string name="i_confirm_that_all_provided_information_is_correct">I confirm that all provided information is correct</string>
+    <string-array name="marital_status">
+        <item>Married</item>
+        <item>Single</item>
+        <item>Divorced</item>
+        <item>Choose one</item>
+    </string-array>
+</resources>

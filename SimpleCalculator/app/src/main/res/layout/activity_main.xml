@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_header"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:textColor="@color/darkBlue"
+        android:layout_marginVertical="40dp"/>
+
+    <EditText
+        android:hint="@string/input1_hint_text"
+        android:id="@+id/num1"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textColor="@color/darkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_marginVertical="10dp"
+        android:hint="@string/input2_hint_text"
+        android:id="@+id/num2"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="" />
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnSomar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="addTwoNumbers"
+            android:text="@string/adicao"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnSubtrair"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="subtractTwoNumbers"
+            android:text="@string/subtracao"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="multiplyTwoNumbers"
+            android:text="@string/multiplicar"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnDividir"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="dividTwoNumbers"
+            android:text="@string/dividir"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnNaturalLog"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="naturalLog"
+            android:text="@string/log"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btnFactorial"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="factorial"
+            android:text="@string/factorial"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>

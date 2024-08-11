@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Mini Shop</string>
+    <string-array name="products">
+        <item>Mochila de couro</item>
+        <item>Camiseta azul</item>
+        <item>Camiseta verde</item>
+        <item>Terno classico</item>
+        <item>Camisa simples masculina</item>
+        <item>Conjunto masculino</item>
+        <item>Relogio de pulso</item>
+    </string-array>
+    <string-array name="description">
+        <item>Mochila de couro preto elegante e estilosa com acabamento texturizado. Possui múltiplos compartimentos com zíper para armazenamento organizado. Ideal para uso diário ou viagens.</item>
+        <item>Camiseta básica de gola redonda azul clássica feita de tecido macio e confortável. Perfeita para uso casual, disponível em diversos tamanhos. Uma adição versátil a qualquer guarda-roupa.</item>
+        <item>Camiseta básica de gola redonda verde simples, porém elegante, feita de tecido macio e de alta qualidade. Ideal para uso diário, oferecendo conforto e caimento relaxado. Disponível em diversos tamanhos.</item>
+        <item>Eleve seu estilo com este sofisticado terno de moda masculina para negócios. Com jaqueta escura, colete cinza claro e uma elegante gravata xadrez, este conjunto é perfeito para ocasiões formais e ambientes profissionais. Confeccionado com materiais de alta qualidade para um visual nítido e polido. Disponível em diversos tamanhos.</item>
+        <item>Atualize seu guarda-roupa com esta simples camisa masculina bege. Feita de tecido macio e respirável, oferece um ajuste confortável e relaxado. Perfeita para ocasiões casuais e semi-formais. Disponível em diversos tamanhos.</item>
+        <item>Conjunto elegante de terno masculino com jaqueta escura, colete cinza claro e uma elegante gravata xadrez. Perfeito para ocasiões formais e ambientes profissionais.</item>
+        <item>Descubra nossa coleção de relógios de pulso elegantes, perfeitos para qualquer ocasião. Apresentando designs elegantes, materiais duráveis e precisão na marcação do tempo, esses relógios adicionam um toque de sofisticação ao seu visual. Disponíveis em diversos estilos e acabamentos para atender ao seu gosto pessoal.</item>
+    </string-array>
+    <string-array name="price">
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+    </string-array>
+    <string-array name="stock">
+        <item>15</item>
+        <item>100</item>
+        <item>10</item>
+        <item>20</item>
+        <item>5</item>
+        <item>1</item>
+        <item>10</item>
+    </string-array>
+</resources>

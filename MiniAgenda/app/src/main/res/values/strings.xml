@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Agenda App</string>
+    <string name="page_title">Agenda</string>
+    <string name="search">Search</string>
+    <string name="add">Adicionar</string>
+    <string name="empty_name_error">O campo do nome esta vazio</string>
+    <string name="invalid_email_error">Email invalido</string>
+    <string name="empty_email_error">O campo do Email esta vazio</string>
+    <string name="empty_phone_error">O campo do numero de telefone esta Vazio</string>
+    <string name="empty_address_error">O campo de endereço esta vazio</string>
+    <string name="person_status_success">O registo foi efectuado com sucesso.</string>
+    <string name="add_person">Add person</string>
+    <string name="person_status_error">Nao foi possivel inserir o registo ao banco de dados</string>
+    <string name="edit">edit</string>
+    <string name="favorite">favorite</string>
+    <string name="more">more\n</string>
+    <string name="searchbar_hint">Pesquise aqui</string>
+    <string name="option_1">Editar</string>
+    <string name="option_2">Deletar\n</string>
+    <string name="invalid_phone_error">Numero de telefone invalido</string>
+    <string name="person_update_status_error">Nao foi possivel actualizar o registo</string>
+    <string name="person_update_status_success">Registo actualizado com sucesso</string>
+</resources>
